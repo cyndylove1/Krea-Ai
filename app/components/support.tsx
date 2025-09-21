@@ -24,7 +24,7 @@ export default function Support({hideIcon}: SupportProps) {
         <h2>Gallery</h2>
       </div>
 
-      <div className="flex items-center gap-[5px] lg:bg-[#f6f6f6] bg-white text-black px-2 py-[5px] rounded-[6px] text-[12px]">
+      <div className="flex items-center gap-[5px] bg-[#f6f6f6] bg-white text-black px-2 py-[5px] rounded-[6px] text-[12px]">
         <span>
           <BiSupport />
         </span>

@@ -14,32 +14,31 @@ export default function Icons() {
   const links = [
     { href: "/", icon: <GoHomeFill /> },
     { href: "/gallery", icon: <BsImage /> },
-    { href: "/videos", icon: <TbVideoFilled /> },
-    { href: "/skills", icon: <GiChisel /> },
-    { href: "/discounts", icon: <TbPencilDiscount /> },
-    { href: "/apps", icon: <DiAppstore /> },
-    { href: "/projects", icon: <MdFolder /> },
+    { href: "", icon: <TbVideoFilled /> },
+    { href: "", icon: <GiChisel /> },
+    { href: "", icon: <TbPencilDiscount /> },
+    { href: "", icon: <DiAppstore /> },
+    { href: "", icon: <MdFolder /> },
   ];
 
   return (
-    <div className="w-full">
-      <ul className="flex flex-col lg:flex-row w-full lg:bg-[#f6f6f6] lg:h-[40px] rounded-[10px]">
+    <div>
+      <ul className="flex items-center flex-col lg:flex-row justify-center lg:bg-[#f6f6f6] lg:h-[40px] rounded-[10px]">
         {links.map((link, i) => {
           const isActive = pathname === link.href;
 
           return (
-            <li key={i} className="w-full">
+            <li key={i} className="">
               <Link
                 href={link.href}
-                className={`flex items-center justify-start lg:justify-center h-[50px] px-4 transition
-                  w-full lg:w-[30px]
+                className={`flex items-center justify-start lg:justify-center rounded-[10px] py-2 px-4 lg:mx-[5px] my-[10px] transition
                   ${
                     isActive
                       ? "bg-white text-black dark:bg-black dark:text-white"
                       : "text-black"
                   }`}
               >
-                <span className="text-lg">{link.icon}</span>
+                {link.icon}
               </Link>
             </li>
           );
