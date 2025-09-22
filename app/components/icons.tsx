@@ -14,11 +14,11 @@ export default function Icons() {
   const links = [
     { href: "/", icon: <GoHomeFill />, label: "Home" },
     { href: "/gallery", icon: <BsImage />, label: "Image" },
-    { href: "/videos", icon: <TbVideoFilled />, label: "Videos" },
-    { href: "/tools", icon: <GiChisel />, label: "Enhancer" },
-    { href: "/discounts", icon: <TbPencilDiscount />, label: "Realtime" },
-    { href: "/apps", icon: <DiAppstore />, label: "Edit" },
-    { href: "/files", icon: <MdFolder />, label: "Assets" },
+    { href: "", icon: <TbVideoFilled />, label: "Videos" },
+    { href: "", icon: <GiChisel />, label: "Enhancer" },
+    { href: "", icon: <TbPencilDiscount />, label: "Realtime" },
+    { href: "", icon: <DiAppstore />, label: "Edit" },
+    { href: "", icon: <MdFolder />, label: "Assets" },
   ];
 
   return (
