@@ -80,8 +80,8 @@ export default function Navbar() {
           } overflow-y-auto`}
         >
           {/* Close button */}
-          <div className="flex justify-between items-center px-2 py-4 text-black dark:text-white">
-            <div className="flex items-center space-x-1 focus:outline-none text-black dark:text-white">
+          <div className="flex justify-between items-center px-2 py-4 text-black">
+            <div className="flex items-center space-x-1 focus:outline-none text-black">
               <div className="flex items-center gap-[5px]">
                 <span>
                   <Radius />

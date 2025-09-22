@@ -35,7 +35,7 @@ export default function Icons() {
                   ${
                     isActive
                       ? "bg-white text-black"
-                      : "text-black dark:text-white"
+                      : "text-black"
                   }`}
               >
                 {link.icon}
