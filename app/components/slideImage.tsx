@@ -82,7 +82,7 @@ export default function SlideImage() {
   ];
 
   return (
-    <div className="w-full md:ml-4 mt-10 ">
+    <div className="w-full md:ml-4 mt-[6rem] ">
       <div className="flex flex-col md:gap-4 md:flex-row ">
         {/* Left Slider */}
         <div className="mx-4 md:mx-0 md:w-8/12 relative">
