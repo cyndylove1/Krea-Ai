@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <div className="flex items-center justify-between mx-4 my-4">
+      <div className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-[#0f172a] flex items-center justify-between px-4 py-4">
         <div className="flex items-center gap-[1rem]">
           <Logo />
           <div className="relative hidden lg:block">
