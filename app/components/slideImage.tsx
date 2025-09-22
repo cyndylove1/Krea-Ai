@@ -100,7 +100,7 @@ export default function SlideImage() {
                     src={image.src}
                     alt={`Slide ${index + 1}`}
                     fill
-                    className="rounded-[10px]"
+                    className="rounded-[15px]"
                     priority={index === 0}
                   />
                   {/* Text Overlay */}
@@ -144,7 +144,7 @@ export default function SlideImage() {
                     src={image.src}
                     alt={`Static Slide ${index + 1}`}
                     fill
-                    className="rounded-[10px] object-cover "
+                    className="rounded-[15px] object-cover "
                   />
                   {/* Text Overlay */}
 
