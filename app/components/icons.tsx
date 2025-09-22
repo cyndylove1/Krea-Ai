@@ -23,7 +23,7 @@ export default function Icons() {
 
   return (
     <div>
-      <ul className="flex items-center flex-col lg:flex-row justify-center lg:bg-[#f6f6f6] lg:h-[40px] rounded-[10px]">
+      <ul className="flex items-center flex-col lg:flex-row justify-center bg-[#f6f6f6] lg:h-[40px] rounded-[10px]">
         {links.map((link, i) => {
           const isActive = pathname === link.href;
 
@@ -34,7 +34,7 @@ export default function Icons() {
                 className={`flex items-center justify-start lg:justify-center rounded-[10px] py-2 px-4 lg:mx-[5px] my-[10px] transition
                   ${
                     isActive
-                      ? "bg-white text-black dark:bg-black dark:text-white"
+                      ? "bg-white dark:bg[#f6f6f6] text-black"
                       : "text-black"
                   }`}
               >

@@ -50,7 +50,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="bg-[#f6f6f6] dark:bg-[#1e1e1e] p-[6px] rounded-[5px]"
+              className="bg-[#f6f6f6] p-[6px] rounded-[5px]"
             >
               {theme === "dark" ? (
                 <FiMoon className="text-black" />
@@ -75,13 +75,13 @@ export default function Navbar() {
       {/* mobile Menu */}
       <div className="lg:hidden flex">
         <div
-          className={`fixed top-0 right-0 h-full w-[250px] bg-[#f6f6f6] dark:bg-black transform transition-transform duration-500 z-50 ${
+          className={`fixed top-0 right-0 h-full w-[250px] bg-[#f6f6f6] transform transition-transform duration-500 z-50 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           } overflow-y-auto`}
         >
           {/* Close button */}
           <div className="flex justify-between items-center px-2 py-4 text-black">
-            <button className="flex items-center space-x-1 focus:outline-none ">
+            <div className="flex items-center space-x-1 focus:outline-none text-black">
               <div className="flex items-center gap-[5px]">
                 <span>
                   <Radius />
@@ -91,7 +91,7 @@ export default function Navbar() {
               <span>
                 <IoIosArrowDown />
               </span>
-            </button>
+            </div>
             <button onClick={() => setMenuOpen(false)} className="text-2xl">
               <IoMdClose />
             </button>

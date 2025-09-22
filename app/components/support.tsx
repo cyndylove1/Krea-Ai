@@ -38,7 +38,7 @@ export default function Support({hideIcon}: SupportProps) {
 
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="bg-[#f6f6f6] dark:bg-[#1e1e1e] p-[6px] rounded-[5px]"
+            className="bg-[#f6f6f6] p-[6px] rounded-[5px]"
           >
             {theme === "dark" ? (
               <FiMoon className="text-black" />
