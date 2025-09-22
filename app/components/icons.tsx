@@ -12,13 +12,13 @@ export default function Icons() {
   const pathname = usePathname();
 
   const links = [
-    { href: "/", icon: <GoHomeFill /> },
-    { href: "/gallery", icon: <BsImage /> },
-    { href: "", icon: <TbVideoFilled /> },
-    { href: "", icon: <GiChisel /> },
-    { href: "", icon: <TbPencilDiscount /> },
-    { href: "", icon: <DiAppstore /> },
-    { href: "", icon: <MdFolder /> },
+    { href: "/", icon: <GoHomeFill />, label: "Home" },
+    { href: "/gallery", icon: <BsImage />, label: "Image" },
+    { href: "/videos", icon: <TbVideoFilled />, label: "Videos" },
+    { href: "/tools", icon: <GiChisel />, label: "Enhancer" },
+    { href: "/discounts", icon: <TbPencilDiscount />, label: "Realtime" },
+    { href: "/apps", icon: <DiAppstore />, label: "Edit" },
+    { href: "/files", icon: <MdFolder />, label: "Assets" },
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function Icons() {
           const isActive = pathname === link.href;
 
           return (
-            <li key={i} className="">
+            <li key={i} className="relative group">
               <Link
                 href={link.href}
                 className={`flex items-center justify-start lg:justify-center rounded-[10px] py-2 px-4 lg:mx-[5px] my-[10px] hover:bg-white hover:text-black transition 
@@ -40,6 +40,11 @@ export default function Icons() {
               >
                 {link.icon}
               </Link>
+
+              {/* Tooltip */}
+              <span className="absolute left-1/2 -translate-x-1/2 mt-[5px] text-[10px] bg-black text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">
+                {link.label}
+              </span>
             </li>
           );
         })}

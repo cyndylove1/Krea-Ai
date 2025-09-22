@@ -1,6 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import "swiper/css";
@@ -87,10 +87,14 @@ export default function SlideImage() {
         {/* Left Slider */}
         <div className="mx-4 md:mx-0 md:w-8/12 relative">
           <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={20}
             slidesPerView={1}
             pagination={{ clickable: true, el: ".swiper-pagination" }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
             className="lg:h-[400px] md:h-[300px] h-[200px] w-full"
           >
             {images.map((image, index) => (
@@ -106,7 +110,9 @@ export default function SlideImage() {
                   {/* Text Overlay */}
                   <div className="absolute bottom-6 left-6 text-white flex items-center justify-between">
                     <div className="max-w-[60%]">
-                      <h2 className="lg:text-[30px] text-[10px] font-bold">{image.title}</h2>
+                      <h2 className="lg:text-[30px] text-[10px] font-bold">
+                        {image.title}
+                      </h2>
                       <p className="lg:text-[15px] text-[9px]">{image.desc}</p>
                     </div>
                     <div>
@@ -149,7 +155,9 @@ export default function SlideImage() {
                   {/* Text Overlay */}
 
                   <div className="absolute bottom-10 left-6 text-white max-w-[65%]">
-                    <h2 className="lg:text-[20px] text-[10px] font-bold">{image.title}</h2>
+                    <h2 className="lg:text-[20px] text-[10px] font-bold">
+                      {image.title}
+                    </h2>
                     <p className="lg:text-xs text-[9px]">{image.desc}</p>
                   </div>
                 </div>
