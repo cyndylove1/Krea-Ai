@@ -73,9 +73,9 @@ export default function Navbar() {
       </div>
 
       {/* mobile Menu */}
-      <div className="lg:hidden flex bg-[#f6f6f6] dark:bg-[#121212]">
+      <div className="lg:hidden flex">
         <div
-          className={`fixed top-0 right-0 h-full w-[250px]  transform transition-transform duration-500 z-50 ${
+          className={`fixed top-0 right-0 h-full w-[250px] bg-[#f6f6f6] dark:bg-[#121212] transform transition-transform duration-500 z-50 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           } overflow-y-auto`}
         >
