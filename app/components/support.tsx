@@ -37,13 +37,13 @@ export default function Support({hideIcon}: SupportProps) {
           </div>
 
           <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            onClick={() => setTheme(theme === "night" ? "winter" : "night")}
             className="bg-[#f6f6f6] p-[6px] rounded-[5px]"
           >
-            {theme === "dark" ? (
+            {theme === "night" ? (
               <FiMoon className="text-black" />
             ) : (
-              <MdLightMode />
+              <MdLightMode className="text-black" />
             )}
           </button>
 

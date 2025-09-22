@@ -20,10 +20,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "daisyui": "^5.1.14",
     "tailwindcss": "^4",
     "typescript": "^5"
-  },
-  "tailwindcss": {
-    "darkMode": "class"
   }
 }

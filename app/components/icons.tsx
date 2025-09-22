@@ -31,11 +31,11 @@ export default function Icons() {
             <li key={i} className="">
               <Link
                 href={link.href}
-                className={`flex items-center justify-start lg:justify-center rounded-[10px] py-2 px-4 lg:mx-[5px] my-[10px] hover:bg-white transition
+                className={`flex items-center justify-start lg:justify-center rounded-[10px] py-2 px-4 lg:mx-[5px] my-[10px] hover:bg-white hover:text-black transition 
                   ${
                     isActive
                       ? "bg-white text-black"
-                      : "text-black"
+                      : "text-black dark:text-[#c9cbd0] lg:dark:text-black"
                   }`}
               >
                 {link.icon}

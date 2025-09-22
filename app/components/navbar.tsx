@@ -49,13 +49,13 @@ export default function Navbar() {
             </div>
 
             <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              onClick={() => setTheme(theme === "night" ? "winter" : "night")}
               className="bg-[#f6f6f6] p-[6px] rounded-[5px]"
             >
-              {theme === "dark" ? (
+              {theme === "night" ? (
                 <FiMoon className="text-black" />
               ) : (
-                <MdLightMode />
+                <MdLightMode className="text-black" />
               )}
             </button>
 
@@ -64,7 +64,7 @@ export default function Navbar() {
             </div>
           </div>
           <button
-            className="lg:hidden text-2xl"
+            className="lg:hidden text-2xl text-black dark:text-[#c9cbd0]"
             onClick={() => setMenuOpen(true)}
           >
             <IoMdMenu />
@@ -75,13 +75,13 @@ export default function Navbar() {
       {/* mobile Menu */}
       <div className="lg:hidden flex">
         <div
-          className={`fixed top-0 right-0 h-full w-[250px] bg-[#f6f6f6] transform transition-transform duration-500 z-50 ${
+          className={`fixed top-0 right-0 h-full w-[250px] bg-[#f6f6f6] dark:bg-[#0f172a] transform transition-transform duration-500 z-50 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           } overflow-y-auto`}
         >
           {/* Close button */}
-          <div className="flex justify-between items-center px-2 py-4 text-black">
-            <div className="flex items-center space-x-1 focus:outline-none text-black">
+          <div className="flex justify-between items-center px-2 py-4 text-black dark:text-white">
+            <div className="flex items-center space-x-1 focus:outline-none text-black dark:text-white">
               <div className="flex items-center gap-[5px]">
                 <span>
                   <Radius />

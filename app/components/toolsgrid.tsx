@@ -27,7 +27,7 @@ const ToolCard = ({ icon, title, desc, isNew, bgColor }: ToolCardProps) => {
         <div className={`p-2 rounded-lg text-white ${bgColor}`}>{icon}</div>
         <div>
           <div className="flex items-center gap-2">
-            <h3 className="text-[13px] font-semibold">{title}</h3>
+            <h3 className="text-[13px] font-semibold dark:text-[#c9cbd0] text-black">{title}</h3>
             {isNew && (
               <span className="text-[10px] bg-[#0060f2] text-white rounded-full px-2 py-[1px]">
                 New
