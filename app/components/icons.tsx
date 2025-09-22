@@ -42,7 +42,7 @@ export default function Icons() {
               </Link>
 
               {/* Tooltip */}
-              <span className="absolute left-1/2 -translate-x-1/2 mt-[5px] text-[10px] bg-black dark:bg-[#c9cbd0] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">
+              <span className="absolute left-1/2 -translate-x-1/2 mt-[5px] dark:text-black text-[10px] bg-black dark:bg-[#c9cbd0] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">
                 {link.label}
               </span>
             </li>
