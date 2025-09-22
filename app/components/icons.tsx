@@ -23,7 +23,7 @@ export default function Icons() {
 
   return (
     <div>
-      <ul className="flex items-center flex-col lg:flex-row justify-center bg-[#f6f6f6] lg:h-[40px] rounded-[10px]">
+      <ul className="flex items-center flex-col lg:flex-row justify-center lg:bg-[#f6f6f6] lg:h-[40px] rounded-[10px]">
         {links.map((link, i) => {
           const isActive = pathname === link.href;
 
