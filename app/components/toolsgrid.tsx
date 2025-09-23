@@ -34,7 +34,7 @@ const ToolCard = ({ icon, title, desc, isNew, bgColor }: ToolCardProps) => {
               </span>
             )}
           </div>
-          <p className="text-[10px] text-gray-500 max-w-[200px]">{desc}</p>
+          <p className="text-[8px] text-gray-500 max-w-[200px]">{desc}</p>
         </div>
       </div>
 
