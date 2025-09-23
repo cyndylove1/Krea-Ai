@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Navbar from "./components/navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+const jakarta = Plus_Jakarta_Sans({
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
+  variable: "--font-jakarta",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata: Metadata = {
   title: "Krea-ai",
@@ -26,9 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body
+        className={`${jakarta.variable} antialiased`}
+      >
         <ThemeProvider attribute="data-theme" defaultTheme="light">
-          <Navbar/>
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>
