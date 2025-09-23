@@ -28,10 +28,12 @@ export default function Navbar() {
                 <span>
                   <Radius />
                 </span>
-                <h2 className="text-[12px] text-black dark:text-[#c9cbd0]">nwekecynthiachinenye</h2>
+                <h2 className="text-[12px] text-black dark:text-[#c9cbd0]">
+                  nwekecynthiachinenye
+                </h2>
               </div>
               <span>
-                <IoIosArrowDown />
+                <IoIosArrowDown className="text-black dark:text-[#c9cbd0]" />
               </span>
             </button>
           </div>
