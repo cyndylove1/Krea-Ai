@@ -48,13 +48,13 @@ export default function Navbar() {
         {/* Hamburger and mobile icons */}
         <div className="flex items-center gap-6 lg:hidden flex">
           <div className="lg:hidden flex items-center gap-2">
-            <div className="bg-[#f6f6f6] text-black p-[6px] rounded-[5px]">
+            <div className="bg-[#f6f6f6] text-black p-[6px] rounded-[6px]">
               <TbBellFilled />
             </div>
 
             <button
               onClick={() => setTheme(theme === "night" ? "winter" : "night")}
-              className="bg-[#f6f6f6] p-[6px] rounded-[5px]"
+              className="bg-[#f6f6f6] p-[6px] rounded-[6px]"
             >
               {theme === "night" ? (
                 <FiMoon className="text-black" />
