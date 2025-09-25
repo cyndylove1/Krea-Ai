@@ -165,7 +165,7 @@ export default function SlideImage() {
             ))}
           </Swiper>
           {/* Custom Arrows */}
-          <div className="flex justify-end gap-[10px] mt-3 md:mx-14 ">
+          <div className="flex justify-end gap-[10px] mt-3 md:mx-17">
             <Button
               className="custom-prev w-[30px] h-[30px] flex items-center justify-center bg-[#efefef]"
               text={<IoIosArrowBack />}
